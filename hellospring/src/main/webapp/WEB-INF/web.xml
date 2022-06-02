@@ -18,12 +18,6 @@
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
-	<dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-webmvc</artifactId>
-		<version>4.2.1.RELEASE</version>
-	</dependency>
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
