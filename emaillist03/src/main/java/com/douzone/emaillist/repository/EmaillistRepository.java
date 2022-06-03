@@ -25,7 +25,9 @@ public class EmaillistRepository {
 			connection = getConnection();
 
 			// 3. SQL 준비
-			String sql = "select no, first_name, last_name, email" + " from emaillist" + " order by no desc";
+			String sql = "select no, first_name, last_name, email" + 
+						 " from emaillist" + 
+						 " order by no desc";
 			pstmt = connection.prepareStatement(sql);
 
 			// 3. SQL 실행
