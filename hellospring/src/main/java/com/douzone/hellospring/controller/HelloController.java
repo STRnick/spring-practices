@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
-
+	
 	@RequestMapping("/hello") // 요청매핑
 	public String hello() {
 		return "/WEB-INF/views/hello.jsp";
@@ -52,12 +52,9 @@ public class HelloController {
 		return "redirect:/hello";
 	}
 
-	/* 비추 - 기술비침투 위배*/
+	/* 비추 - 기술비침투 위배 */
 	@RequestMapping("/hello7")
-	public void hello7(HttpServletRequest request, 
-					   HttpServletResponse response, 
-					   HttpSession session,
-					   Writer pw) throws IOException {
-					   pw.write("<h1>hello world</h1>");
+	public void hello7(HttpServletRequest request, HttpServletResponse response, HttpSession session, Writer pw) throws IOException {
+		pw.write("<h1>hello world</h1>");
 	}
 }
