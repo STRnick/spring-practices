@@ -12,9 +12,9 @@ public class ExampleController3 {
 	/**
 	 *  Logger 생성
 	 */
-	private static final Log LOG = LogFactory.getLog( ExampleController3.class );
+	private static final Log LOG = LogFactory.getLog(ExampleController3.class);
 	
-	@RequestMapping( "/ex3" )
+	@RequestMapping("/ex3")
 	@ResponseBody
 	public String ex2() {
 		
