@@ -26,8 +26,6 @@ public class FileUploadService {
 				restoreDirectory.mkdirs();
 			}
 			
-			
-
 			String originFileName = multipartFile.getOriginalFilename();
 			String extName = originFileName.substring(originFileName.lastIndexOf('.')+1);
 			String restoreFilename = generateSaveFilename(extName);
