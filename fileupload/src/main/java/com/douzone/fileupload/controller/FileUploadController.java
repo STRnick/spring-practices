@@ -22,7 +22,7 @@ public class FileUploadController {
 
 	@RequestMapping("/upload")
 	public String upload(
-			@RequestParam(value = "email", required = true, defaultValue = "") String email,
+			@RequestParam(value = "email", required = false, defaultValue = "") String email,
 			@RequestParam("file") MultipartFile multipartFile,
 			Model model) {
 			
